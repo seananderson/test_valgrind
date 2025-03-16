@@ -19,7 +19,7 @@ fit <-
 function( x, y ){
   data <- list(Y = y, x=x)
   parameters <- list(a=0, b=0, logSigma=0)
-  obj <- MakeADFun(data, parameters, DLL="linreg")
+  obj <- MakeADFun(data, parameters, DLL="testvalgrind")
   obj$hessian <- TRUE
   opt <- do.call("optim", obj)
   #opt
