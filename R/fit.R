@@ -13,7 +13,7 @@
 #' y = rnorm(10) + x
 #' out = fit( x=x, y=y )
 #'
-#' @useDynLib linreg, .registration = TRUE
+#' @useDynLib testvalgrind, .registration = TRUE
 #' @export
 fit <-
 function( x, y ){

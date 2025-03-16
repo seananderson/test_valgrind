@@ -1,0 +1,9 @@
+*.o
+*.dll
+*.so
+inst/doc
+^.*\.Rproj$
+^\.Rproj\.user$
+.Rproj.user
+docs
+*.pdf
