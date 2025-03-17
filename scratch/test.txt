@@ -1,0 +1,3 @@
+RDvalgrind -e "remotes::install_deps(dependencies = TRUE)"
+RDvalgrind CMD INSTALL --preclean .
+RDvalgrind -d valgrind -f scratch/test.R --no-readline --vanilla > scratch/log.txt 2>&1
