@@ -4,7 +4,7 @@
 \alias{fit}
 \title{fit linreg}
 \usage{
-fit(x, y)
+fit()
 }
 \arguments{
 \item{x}{independent.}
@@ -15,8 +15,6 @@ fit(x, y)
 fits linreg.
 }
 \examples{
-x = 1:10
-y = rnorm(10) + x
-out = fit( x=x, y=y )
+fit()
 
 }

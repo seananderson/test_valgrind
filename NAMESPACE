@@ -3,5 +3,5 @@
 export(fit)
 importFrom(TMB,MakeADFun)
 importFrom(TMB,sdreport)
-importFrom(stats,optim)
-useDynLib(testvalgrind, .registration = TRUE)
+importFrom(mgcv,gam)
+useDynLib(testsmoothers, .registration = TRUE)

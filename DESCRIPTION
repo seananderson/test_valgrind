@@ -1,6 +1,6 @@
-Package: testvalgrind
+Package: testsmoothers
 Type: Package
-Title: tests valgrind
+Title: tests smoothers
 Version: 1.0
 Date: 2025-03-16
 Authors@R: c(

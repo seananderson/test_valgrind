@@ -1,0 +1,2 @@
+library(testsmoothers)
+fit()

@@ -1,0 +1,56 @@
+==3064== Memcheck, a memory error detector
+==3064== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3064== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==3064== Command: /usr/local/RDvalgrind/lib/R/bin/exec/R -f scratch/test.R --no-readline --vanilla
+==3064== 
+
+R Under development (unstable) (2025-03-14 r87972) -- "Unsuffered Consequences"
+Copyright (C) 2025 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library(testsmoothers)
+> fit()
+Loading required package: nlme
+This is mgcv 1.9-1. For overview type 'help("mgcv-package")'.
+sdreport(.) result
+             Estimate Std. Error
+beta0       9.9655172  0.2231922
+log_lambda  5.6254757  1.1651912
+log_lambda  7.7749873  3.0096802
+log_lambda  6.1616711  1.2748670
+log_lambda 10.1673025  1.6493735
+log_lambda  4.8574889  1.1981985
+log_sigma   0.5304995  0.1082322
+Maximum gradient component: 3.958005e-06 
+> 
+==3064== 
+==3064== HEAP SUMMARY:
+==3064==     in use at exit: 210,165,140 bytes in 36,156 blocks
+==3064==   total heap usage: 107,502 allocs, 71,346 frees, 452,584,318 bytes allocated
+==3064== 
+==3064== LEAK SUMMARY:
+==3064==    definitely lost: 0 bytes in 0 blocks
+==3064==    indirectly lost: 0 bytes in 0 blocks
+==3064==      possibly lost: 0 bytes in 0 blocks
+==3064==    still reachable: 210,165,140 bytes in 36,156 blocks
+==3064==                       of which reachable via heuristic:
+==3064==                         newarray           : 4,264 bytes in 1 blocks
+==3064==         suppressed: 0 bytes in 0 blocks
+==3064== Rerun with --leak-check=full to see details of leaked memory
+==3064== 
+==3064== For lists of detected and suppressed errors, rerun with: -s
+==3064== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
